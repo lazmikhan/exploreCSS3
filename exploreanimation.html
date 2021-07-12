@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes sliding {
+            0% {
+                top: 350px;
+                transform: scale(0.5);
+
+            }
+
+            100% {
+                top: 0;
+                background-color: yellow;
+            }
+
+        }
+
+
+
+        .stage {
+            width: 1000x;
+            height: 500px;
+            background-image: linear-gradient(red, orange);
+        }
+
+        .ball {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(194, 61, 21);
+            border-radius: 50%;
+            position: relative;
+            left: 300px;
+            top: 350px;
+            animation: sliding 2s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+
+        .water {
+            width: 900px;
+            height: 100px;
+            position: relative;
+            top: 300px;
+            background-image: linear-gradient(lightblue, yellow);
+
+
+        }
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>lets explore animation</h1>
+    <div class="stage">
+        <div class="ball">
+
+        </div>
+        <div class="water">
+
+        </div>
+    </div>
+</body>
+
+</html>
